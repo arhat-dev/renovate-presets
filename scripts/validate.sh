@@ -18,8 +18,8 @@ set -e
 
 for file in *.json; do
   echo "Validating ${file}"
-  cp renovate.json renovate.backup.json
-  cp "${file}" renovate.json
+  cp renovate.json renovate.backup
+  cp "${file}" renovate.json || true
   npx --package renovate -c 'renovate-config-validator'
-  mv renovate.backup.json renovate.json
+  mv renovate.backup renovate.json
 done
