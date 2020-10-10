@@ -3,6 +3,7 @@
     "fileMatch": [".+/manifests/.+\\.yaml$", ".+/manifests-custom/.+\\.yaml$"]
   },
   "aliases": {
+    "fluent": "https://fluent.github.io/helm-charts",
     "strimzi": "https://strimzi.io/charts",
     "kedacore": "https://kedacore.github.io/charts",
     "mattermost": "https://helm.mattermost.com",
@@ -63,6 +64,7 @@
     {
       "datasources": ["helm"],
       "registryUrls": [
+        "https://fluent.github.io/helm-charts",
         "https://strimzi.io/charts",
         "https://kedacore.github.io/charts",
         "https://helm.mattermost.com",
