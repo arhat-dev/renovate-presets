@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # Copyright 2020 The arhat.dev Authors.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -12,7 +14,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include scripts/lint.mk
+set -e
 
-validate:
-	sh scripts/validate.sh
+for file in *.json; do
+  echo "Validating ${file}"
+  cp renovate.json renovate.backup.json
+  cp "${file}" renovate.json
+  npx --package renovate -c 'renovate-config-validator'
+  mv renovate.backup.json renovate.json
+done

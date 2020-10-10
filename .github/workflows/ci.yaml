@@ -23,3 +23,6 @@ jobs:
     - name: Lint
       run: |
         make lint.all
+    - name: Validate
+      run: |
+        make validate
