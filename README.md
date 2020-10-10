@@ -1,9 +1,12 @@
-# Template Repo
+# renovate-presets
 
-[![CI](https://github.com/arhat-dev/template-repo/workflows/CI/badge.svg)](https://github.com/arhat-dev/template-repo/actions?query=workflow%3ACI)
-[![codecov](https://codecov.io/gh/arhat-dev/template-repo/branch/master/graph/badge.svg)](https://codecov.io/gh/arhat-dev/template-repo)
+[![CI](https://github.com/arhat-dev/renovate-presets/workflows/CI/badge.svg)](https://github.com/arhat-dev/renovate-presets/actions?query=workflow%3ACI)
 
-Base template for more specific repo templates
+Shared presets for renovate jobs
+
+## Presets
+
+- `github>arhat-dev/renovate-presets:kubernetes-cluster` for kubernetes clusters chart renovation with [`helm-stack`](https://github.com/arhat-dev/helm-stack)
 
 ## LICENSE
 
