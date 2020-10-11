@@ -16,6 +16,7 @@
   "schedule": ["every weekend"],
   "timezone": "Asia/Hong_Kong",
   "dependencyDashboard": true,
+  "dependencyDashboardTitle": "Available dependency upgrades",
   "dependencyDashboardApproval": true,
   "dependencyDashboardAutoclose": false,
   "prBodyDefinitions": {
