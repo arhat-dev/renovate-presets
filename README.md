@@ -6,6 +6,7 @@ Shared presets for renovate jobs
 
 ## Presets
 
+- `github>arhat-dev/renovate-presets:general` for every repo
 - `github>arhat-dev/renovate-presets:kubernetes-cluster` for kubernetes clusters chart renovation with [`helm-stack`](https://github.com/arhat-dev/helm-stack)
 
 ## LICENSE
