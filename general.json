@@ -1,5 +1,6 @@
 {
-  "labels": ["dependencies"],
+  "extends": ["config:base"],
+  "labels": ["deps"],
   "unicodeEmoji": true,
   "semanticCommitType": "deps",
   "semanticCommits": "enabled",
