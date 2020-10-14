@@ -18,6 +18,7 @@
   "timezone": "Asia/Hong_Kong",
   "dependencyDashboard": true,
   "dependencyDashboardTitle": "Available dependency upgrades",
+  "dependencyDashboardFooter": "- [ ] <!-- manual job -->Check this box to trigger a request for Renovate to run again on this repository",
   "dependencyDashboardApproval": true,
   "dependencyDashboardAutoclose": false,
   "prBodyDefinitions": {
