@@ -6,7 +6,7 @@ Shared presets for renovate jobs
 
 ## Presets
 
-- `github>arhat-dev/renovate-presets:general` for every repo
+- [`github>arhat-dev/renovate-presets:general`](./general.json) for every repo
 
 ## LICENSE
 
