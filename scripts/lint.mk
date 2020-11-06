@@ -22,7 +22,7 @@ lint.shell:
 		sh -c "find . | grep -E -e '.sh\$$' | grep -v build | xargs -I'{}' shellcheck -S warning -e SC1090 -e SC1091 {} ;"
 
 lint.yaml:
-	${RUN_LINTER} arhatdev/yamllint:latest yamllint -c .yaml-lint.yml .
+	${RUN_LINTER} ghcr.io/arhat-dev/yamllint:latest yamllint -c .yaml-lint.yml .
 
 lint.all: \
 	lint.file \
