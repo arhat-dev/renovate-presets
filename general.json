@@ -65,7 +65,7 @@
     {
       "fileMatch": ["\\.pre-commit-config\\.yaml$"],
       "matchStrings": [
-        "- repo:\\s+(?<repoURL>.*?)\\s+rev:\\s+(?<currentValue>.*?)"
+        "- repo:\\s+(?<repoURL>.*?)\\s+rev:\\s+(?<currentValue>.*?)\\s+"
       ],
       "depNameTemplate": "{{{repoURL}}}",
       "lookupNameTemplate": "{{{repoURL}}}",
