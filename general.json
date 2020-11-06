@@ -56,13 +56,21 @@
   "regexManagers": [
     {
       "fileMatch": [".+\\.mk$", "Makefile$"],
-      "matchStrings": [
-        "\\s+(?<repoName>.*?):(?<currentValue>.*?)\\s+"
-      ],
+      "matchStrings": ["\\s+(?<repoName>.*?):(?<currentValue>.*?)\\s+"],
       "depNameTemplate": "{{{repoName}}}",
       "lookupNameTemplate": "{{{repoName}}}",
       "datasourceTemplate": "docker",
       "versioningTemplate": "docker"
+    },
+    {
+      "fileMatch": ["\\.pre-commit-config\\.yaml$"],
+      "matchStrings": [
+        "- repo:\\s+(?<repoURL>.*?)\\s+rev:\\s+(?<currentValue>.*?)"
+      ],
+      "depNameTemplate": "{{{repoURL}}}",
+      "lookupNameTemplate": "{{{repoURL}}}",
+      "datasourceTemplate": "git-tags",
+      "versioningTemplate": "semver"
     }
   ]
 }
